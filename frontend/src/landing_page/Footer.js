@@ -35,11 +35,15 @@ function Footer() {
           <a href="#">Status of your complaints</a><br />
         </div>
 
-        <div className="col">
-          <p>Account</p>
-          <a href="#">Open an account</a><br />
-          <a href="#">Transfer Funding</a>
-        </div>
+       <div className="col">
+  <p>Account</p>
+  <a href="#">Open an account</a><br />
+  <a href="#">Transfer Funding</a><br />
+  <a href="https://zerodha-3-si0t.onrender.com" target="_blank" rel="noopener noreferrer">
+    Admin Dashboard
+  </a>
+</div>
+
 
         <div className="mt-5 text-small text-muted">
           <p>
@@ -59,6 +63,7 @@ function Footer() {
             Prevent unauthorised transactions in your account...
           </p>
         </div>
+        
       </div>
     </div>
   );
