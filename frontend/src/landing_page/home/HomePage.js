@@ -12,7 +12,8 @@ function HomePage () {
   const [holdings, setHoldings] = useState([]);
 
   useEffect(() => {
-    const apiUrl = import.meta.env.VITE_API_URL;
+    // Use CRA environment variable format here
+    const apiUrl = process.env.REACT_APP_API_URL;
     axios.get(`${apiUrl}/allHoldings`)
       .then(res => setHoldings(res.data))
       .catch(err => console.error(err));
